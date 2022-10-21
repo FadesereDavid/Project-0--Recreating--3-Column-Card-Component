@@ -1,0 +1,107 @@
+:root {
+    --bright-grey: rgb(244, 130, 9);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+   }
+    
+    
+    * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+    body,
+     button {
+       font-family: "Lexend Deca", sans-serif;
+    }
+   
+    h3 {
+       font-family: "Big Shoulders Display", sans-serif;
+       text-transform: uppercase;
+       font-size: 30px;
+   }
+   p {
+       font-size: 15px;
+       line-height: 1.6;
+   }
+   
+   .btn{
+       background-color: rgba(255, 255, 255, 0.419);
+       border: 2px solid rgb(63, 10, 42);
+       border-radius: 30px;
+       padding: 10px 20px;
+       cursor:pointer;
+       transition: all 0.4s ease-in-out;
+   }
+   
+   .btn:hover {
+       background-color: transparent;
+       color:hsla(0, 0%, 100%, 0.75);
+   }
+   .bright-orange {
+       background-color: var(--bright-grey);
+       color: rgb(42, 32, 32);
+       border-radius: 10px 10px 0 0;
+   }
+   .bright-color .btn {
+       color: var(--bright-grey);
+   }
+   
+   .dark-cyan {
+       background-color: var(--dark-cyan);
+       color: #fff;
+   }
+   .dark-cyan .btn {
+       color: var(--dark-cyan);
+   }
+   
+   .very-dark-cyan {
+       background-color: var(--Very-dark-cyan);
+       color: #fff;
+       border-radius: 0 0 10px 10px;
+   }
+   .very-dark-cyan .btn {
+       color: var(--very-dark-brown);
+   }
+   .container {
+       padding: 20px;
+   }
+   
+   .card {
+       padding: 30px;
+   }
+   .card img {
+       margin-bottom: 20px;
+   }
+   .card h3 {
+       margin-bottom: 20px;
+   }
+   .card p {
+       margin-bottom: 10px;
+   }
+   
+   @media (min-width: 900px) {
+       .container {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           min-height: 100vh;
+           max-width: 900px;
+           margin: auto;
+   
+       }
+       
+   }
+   .bright-orange {
+       border-radius: 10px 0 0 10px;
+   }
+   
+   .very-dark-cyan {
+       border-radius:0 10px 10px 0;
+   }
+   
+   @media (min-width: 1280px) {
+       .container {
+           max-width: 1200px;
+       }
+   }
